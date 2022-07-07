@@ -2,7 +2,9 @@ name: Build Dev Version Extension
 
 # on: [workflow_dispatch]
 on:
-  push
+  push:
+    branches:
+      - '*'
 #  push:
 #    branches: [ $default-branch ]
 #  pull_request:

@@ -1,8 +1,11 @@
 name: Build Dev Version Extension
 
-on: [workflow_dispatch]
-# release:
-#   types: [published]
+# on: [workflow_dispatch]
+on:
+  push:
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
 
 jobs:
   zip-files:
